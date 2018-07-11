@@ -4,3 +4,8 @@ apt-add-repository ppa:ansible/ansible
 apt-get update
 apt-get install ansible
 ansible --version
+vim /etc/ansible/ansible.cfg
+  host_key_checking = false              (This is needed if you are adding ansible with terraform)
+  
+  mkdir terransible
+  cd terransible
